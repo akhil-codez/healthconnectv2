@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+Project Name: Health Connect
 
-## Project info
+Health Connect is a mobile app that provides AI-driven healthcare services, including symptom checking, telemedicine, emergency response, medicine delivery, and appointment booking.
 
-**URL**: https://lovable.dev/projects/2f6d4bcb-8529-44e7-bbb7-8ce0d4e3ebd0
 
-## How can I edit this code?
 
-There are several ways of editing your application.
 
-**Use Lovable**
+Features-->
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2f6d4bcb-8529-44e7-bbb7-8ce0d4e3ebd0) and start prompting.
+1. *Authentication & User Roles (Supabase Auth)*  
+   - Two types of users: Patients & Doctors  
+   - Signup/Login using Email & Password (Supabase Auth)  
+   - Doctors' accounts stay in "Pending" status until approved  
+   - Role-based dashboards (Patients & Doctors see different UIs)  
 
-Changes made via Lovable will be committed automatically to this repo.
+2. *AI Symptom Checker*  
+   - Users enter symptoms → Get possible conditions & recommendations  
+   - API Integration: Use Google Med-PaLM 2 API or Infermedica API  
+   - Store past symptom reports in Supabase  
 
-**Use your preferred IDE**
+3. *Smart Appointment Booking*  
+   - Patients can search doctors & book appointments  
+   - Doctors can approve/reject/manage appointments  
+   - Push notifications for appointment reminders  
+   - Store appointments in Supabase  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+4. *Emergency Response System*  
+   - GPS Tracking (Expo Location API) → Find nearest hospitals  
+   - Emergency Call Feature → Direct call to emergency services  
+   - *Automatic SOS Alerts* → Notify emergency contacts via SMS or app notifications  
+   - *Integration with Linked Hospitals* → Seamless connection to pre-registered emergency centers  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+5. *Medicine Search & Delivery*  
+   - Search for any medicine by name  
+   - Show full medicine details (composition, uses, side effects, alternatives)  
+   - API Integration: OpenFDA / DrugBank / HealthOS OR custom Supabase DB  
+   - Online medicine ordering & delivery (with payment gateway integration)  
 
-Follow these steps:
+6. *Doctor & Hospital Locator*  
+   - Users can search for hospitals & doctors  
+   - Show availability, consultation fees, and reviews  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+7. *Community & Mental Health Support*  
+   - Anonymous discussion forums  
+   - Online counseling & telemedicine calls  
+   - Doctor Q&A section  
+   - *Disease-specific Communities* → Connect users with similar conditions for shared experiences  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+8. *Medicine Reminders & Notifications*  
+   - Push Notifications for medicine intake  
+   - Automated reminders for appointments & emergencies  
 
-# Step 3: Install the necessary dependencies.
-npm i
+9. *Multilingual Support*  
+   - Auto-detect user language  
+   - Manual language switch option using react-native-localize  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+10. *Health Progress Tracking*  
+    - Graphs and charts for health metrics like blood pressure, glucose levels, etc.  
+    - Integration with wearable health devices or fitness apps  
+    - Shareable health reports for consultations  
 
-**Edit a file directly in GitHub**
+11. *Psychological Support*  
+    - Regular mental health check-ins via surveys or interactive tools  
+    - Dedicated mental health professionals for video consultations  
+    - Emergency mental health support and crisis assistance  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2f6d4bcb-8529-44e7-bbb7-8ce0d4e3ebd0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
