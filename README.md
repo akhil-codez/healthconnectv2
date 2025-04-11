@@ -3,8 +3,6 @@ Project Name: Health Connect
 Health Connect is a mobile app that provides AI-driven healthcare services, including symptom checking, telemedicine, emergency response, medicine delivery, and appointment booking.
 
 
-
-
 Features-->
 
 1. *Authentication & User Roles (Supabase Auth)*  
